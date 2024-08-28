@@ -1,17 +1,10 @@
-import { useState } from 'react';
+import Card from './components/Card';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <h1>Counter</h1>
-        <p>{count}</p>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-        <button onClick={() => setCount(count - 1)}>Decrement</button>
-      </div>
-    </>
+    <main>
+      <Card />
+    </main>
   );
 }
 
